@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    border: border-box;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    padding: 40px 40px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, deepskyblue, darkblue);
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search input {
+    height: 60px;
+    width: 80%;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.search button {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.search button img {
+    width: 20px;
+}
+
+.error {
+    margin-top: 10px;
+    font-size: 1rem;
+    display: none;
+}
+
+.weather-details {
+    display:none;
+}
+
+.weather-details img {
+    width: 250px;
+}
+
+.temp {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.city {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+}
+
+.column img {
+    width: 2rem;
+    margin-right: 20px;
+}
+
+.column p {
+    text-align: left;
+}
+
+.humidity, .wind {
+    font-size: 1.5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search input {
+        width: 100%;
+        margin-bottom:10px;
+    }
+}
